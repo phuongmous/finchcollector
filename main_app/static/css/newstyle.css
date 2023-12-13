@@ -1,0 +1,45 @@
+nav, .page-footer {
+  background-color: #eb9a9a;
+}
+
+body {
+  background-color: #f9f2f2;
+}
+
+.card-content, .btn, .btn-large, .btn-small {
+  background-color: #dad6d6;
+  color: black;
+}
+
+.red-text, .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+  color: black;
+}
+
+.card, .card-panel {
+  border-radius: 10px;
+}
+
+.card .card-content {
+  border-radius: 10px 10px 0 0;
+}
+
+.card .card-action:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+.btn, .btn-large, .btn-small {
+  border-radius: 8px;
+}
+.btn:hover, .btn-large:hover, .btn-small:hover {
+  background-color: #AAAAAA;
+}
+
+.teal-text {
+  color: #eb9a9a !important;
+}
+
+table {
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=newstyle.css.map */

@@ -1,0 +1,50 @@
+$primary-color-1: #eb9a9a;
+$primary-color-2: #f9f2f2;
+$primary-color-4: #AAAAAA;
+$primary-color-3: #dad6d6;
+
+nav, .page-footer {
+    background-color: $primary-color-1;
+}
+
+body {
+    background-color: $primary-color-2;
+}
+
+.card-content, .btn, .btn-large, .btn-small {
+    background-color: $primary-color-3;
+    color: black;
+}
+
+.red-text, .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating)  {
+    color: black;
+}
+
+.card, .card-panel  {
+    border-radius: 10px;
+}
+
+.card .card-content {
+    border-radius: 10px 10px 0 0;
+}
+
+.card .card-action:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+.btn, .btn-large, .btn-small {
+    // background-color: $primary-color-3;
+    border-radius: 8px;
+    // transition: background-color 0.2s ease-out;
+    &:hover {
+        background-color: $primary-color-4;
+    }
+}
+
+.teal-text {
+    color: $primary-color-1 !important;
+}
+
+table {
+    margin-bottom: 20px;
+}
