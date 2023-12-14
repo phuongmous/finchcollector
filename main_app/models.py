@@ -1,6 +1,7 @@
 from django.db import models
 from django.urls import reverse
 from datetime import date
+from django.contrib.auth.models import User
 
 MEALS = (
     ('B', 'Breakfast'),
@@ -26,6 +27,7 @@ class Finch(models.Model):
     lifespan = models.CharField(max_length=100)
     habitat = models.CharField(max_length=100)
     toys = models.ManyToManyField(Toy)  # creates a hidden join table
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def get_absolute_url(self):
         return reverse('detail', kwargs={'finch_id': self.id})
